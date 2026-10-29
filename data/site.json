@@ -8,38 +8,76 @@
   "hero": {
     "title": "欲しいものを、実際に動くものとして作る。",
     "lead": [
-      "個人的に欲しいもの、面倒に感じること、技術的に面白いと思ったことを出発点に、ソフトウェアやAIツールを開発しています。",
-      "完成したもの、開発中のもの、構想段階のものを区別して、ここに記録していきます。"
+      "AI会話体験・アプリ・ゲームの個人開発を行っています。技術検証や開発の進捗、プロダクトのリリース情報を発信しています。",
+      "20年越しのネット人格「おめぶ」として、面白い体験を形にしていきます。"
     ]
   },
   "policy": [
-    { "title": "自分が欲しいものを作る", "text": "最初の動機は、自分が使いたい、あるいは試してみたいという気持ちです。趣味や知的好奇心も大切にしています。" },
-    { "title": "複雑な問題を扱える形にする", "text": "プログラムやAIを使って、複雑な制度や面倒な作業を、手元で扱える形に整理・自動化します。" },
-    { "title": "動かして、試して、改善する", "text": "仕様だけで終わらせず、実際に動くものを作り、検証し、改善を重ねます。公開できるものは公開します。" }
+    {
+      "title": "自分が欲しいものを作る",
+      "text": "最初の動機は、自分が使いたい、あるいは試してみたいという気持ちです。趣味や知的好奇心も大切にしています。"
+    },
+    {
+      "title": "複雑な問題を扱える形にする",
+      "text": "プログラムやAIを使って、複雑な制度や面倒な作業を、手元で扱える形に整理・自動化します。"
+    },
+    {
+      "title": "動かして、試して、改善する",
+      "text": "仕様だけで終わらせず、実際に動くものを作り、検証し、改善を重ねます。公開できるものは公開します。"
+    }
   ],
   "social": [
-    { "label": "GitHub", "url": "" },
-    { "label": "X", "url": "" }
+    {
+      "label": "GitHub",
+      "url": "https://github.com/kagekage4113-lab"
+    },
+    {
+      "label": "X",
+      "url": ""
+    }
   ],
   "contact": {
-    "lead": "ご連絡は、以下の窓口からお願いします。",
-    "methods": [],
+    "lead": "お仕事のご相談・ご依頼は、Xの DM またはメールからお願いします。",
+    "methods": [
+      {
+        "label": "メール: mikoaiprojecttv@gmail.com",
+        "url": "mailto:mikoaiprojecttv@gmail.com"
+      }
+    ],
     "emptyNote": "お問い合わせ先は準備中です。"
   },
-  "footer": { "copyrightHolder": "" },
+  "footer": {
+    "copyrightHolder": "おめぶ"
+  },
   "privacyPolicy": null,
   "categories": [
-    { "id": "ai-automation", "label": "AI・自動化" },
-    { "id": "simulator-tools", "label": "シミュレータ・実用ツール" },
-    { "id": "game", "label": "ゲーム・ゲームAI" },
-    { "id": "streaming", "label": "配信支援" },
-    { "id": "other", "label": "その他" }
+    {
+      "id": "ai-automation",
+      "label": "AI・自動化"
+    },
+    {
+      "id": "simulator-tools",
+      "label": "シミュレータ・実用ツール"
+    },
+    {
+      "id": "game",
+      "label": "ゲーム・ゲームAI"
+    },
+    {
+      "id": "streaming",
+      "label": "配信支援"
+    },
+    {
+      "id": "other",
+      "label": "その他"
+    }
   ],
   "statuses": {
     "released": "公開中",
     "developed": "開発済み",
     "in-progress": "開発中",
     "concept": "構想段階",
-    "checking": "状況確認中"
+    "checking": "状況確認中",
+    "beta": "ベータ版公開中"
   }
 }
