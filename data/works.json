@@ -20,7 +20,12 @@
     "tech": [],
     "howToUse": [],
     "availability": "",
-    "links": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/kagekage4113-lab/yakuyomichan"
+      }
+    ],
     "constraints": [],
     "roadmap": [
       "独立した専用ページへの発展を検討しています。"
@@ -182,6 +187,10 @@
       {
         "label": "デモを開く",
         "url": "https://kagekage4113-lab.github.io/swap-sim/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/kagekage4113-lab/swap-sim"
       }
     ],
     "constraints": [
