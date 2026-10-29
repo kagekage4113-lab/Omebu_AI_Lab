@@ -12,7 +12,12 @@
       "会話AIのような複雑な人格機能は載せず、「翻訳して読み上げるだけ」に絞って、軽量さと安定性を優先しています。"
     ],
     "dedicatedSiteNote": "将来、専用ページ・専用ドメインへ独立させる予定。画像・説明文はこのフォルダ(assets/works/yakuyomi-chan/)とJSONにまとめておく。",
-    "thumbnail": null,
+    "thumbnail": {
+      "src": "assets/works/yakuyomi-chan/thumb.webp",
+      "alt": "やく読みちゃんのアイコンとロゴ",
+      "width": 1672,
+      "height": 941
+    },
     "background": [],
     "useCases": [
       "海外の視聴者からのコメントが多い、TwitchやYouTubeの配信者",
@@ -81,7 +86,12 @@
       "収入・経費・控除を入力して、所得税・住民税・個人事業税・社会保険料・手取りの「目安」を出すツールです。「あと50万円稼いだら？」「今年利確するか来年に回すか」といった比較ができます。",
       "確定申告の代わりではなく、正確な申告税額を出すものではありません。現在はベータ版で、令和8年分に対応しています。"
     ],
-    "thumbnail": null,
+    "thumbnail": {
+      "src": "assets/works/tax-simulator/thumb.webp",
+      "alt": "電卓と硬貨、「手取り」と書かれた明細のイメージイラスト",
+      "width": 1536,
+      "height": 1024
+    },
     "background": [
       "複雑な税制を、手元で試算できる形にするために開発しました。"
     ],
@@ -189,7 +199,12 @@
     "summary": [
       "外貨スワップポイントを再投資してロットを増やしていく運用を、ブラウザ上でシミュレーションするツールです。スマホのホーム画面に追加すれば、アプリのように使えます(PWA対応)。"
     ],
-    "thumbnail": null,
+    "thumbnail": {
+      "src": "assets/works/swap-sim/thumb.webp",
+      "alt": "スワップ複利シミュレーターのタイトルロゴ。グラフと硬貨のイラスト",
+      "width": 1672,
+      "height": 941
+    },
     "background": [],
     "useCases": [
       "スワップを再投資する運用で、ロットや維持率がどう推移するかを事前に試算したい人"

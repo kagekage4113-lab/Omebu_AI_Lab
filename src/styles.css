@@ -87,3 +87,6 @@ figcaption { color: var(--muted); font-size: .88rem; margin-top: 6px; }
   .hero { padding-top: 40px; }
   .section { padding-top: 40px; }
 }
+
+/* 実画像(ロゴ・イラスト)は切り抜かず全体を見せる */
+img.art { object-fit: contain !important; background: #fff; }

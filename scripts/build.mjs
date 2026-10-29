@@ -57,7 +57,7 @@ function thumb(w, root, lazy = true) {
   const src = t?.src ? root + t.src : `${root}assets/placeholder/${w.slug}.svg`;
   const alt = t?.src ? t.alt || `${w.name}のサムネイル` : `${w.name}の仮画像(実際の画面ではありません)`;
   const size = t?.width && t?.height ? ` width="${t.width}" height="${t.height}"` : ` width="1280" height="720"`;
-  return `<img src="${esc(src)}" alt="${esc(alt)}"${size}${lazy ? ' loading="lazy" decoding="async"' : ""}>`;
+  return `<img${t?.src ? ' class="art"' : ""} src="${esc(src)}" alt="${esc(alt)}"${size}${lazy ? ' loading="lazy" decoding="async"' : ""}>`;
 }
 
 const badge = (w) => `<span class="badge badge-${esc(w.status)}">${esc(statusLabel(w.status))}</span>`;
@@ -264,7 +264,7 @@ function contactPage() {
 // ---------- 出力 ----------
 rmSync(DIST, { recursive: true, force: true });
 mkdirSync(DIST, { recursive: true });
-if (existsSync(join(ROOT, "public"))) cpSync(join(ROOT, "public"), join(DIST, "assets"), { recursive: true });
+if (existsSync(join(ROOT, "public"))) cpSync(join(ROOT, "public"), DIST, { recursive: true });
 cpSync(join(ROOT, "src", "styles.css"), join(DIST, "assets", "styles.css"));
 cpSync(join(ROOT, "src", "favicon.svg"), join(DIST, "assets", "favicon.svg"));
 
