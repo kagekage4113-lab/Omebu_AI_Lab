@@ -2,24 +2,47 @@
   {
     "slug": "yakuyomi-chan",
     "name": "やく読みちゃん",
-    "tagline": "PC上で使う読み上げ関連ツール。",
-    "category": "other",
+    "tagline": "配信のチャットを自然な日本語に翻訳し、VOICEVOXの声で読み上げるツール。",
+    "category": "streaming",
     "status": "released",
     "featured": true,
-    "unverified": true,
+    "unverified": false,
     "summary": [
-      "PC上で利用する読み上げ関連のツールです。詳細な機能・対応環境は確認中のため、確定次第このページを更新します。"
+      "正式な名称は「多言語チャット翻訳読み上げボット」です。配信のチャットコメントを、何語で書かれていても自然な日本語に翻訳し、VOICEVOXの声で読み上げます。翻訳はローカルLLMだけで行い、クラウドAPIは使いません。",
+      "会話AIのような複雑な人格機能は載せず、「翻訳して読み上げるだけ」に絞って、軽量さと安定性を優先しています。"
     ],
     "dedicatedSiteNote": "将来、専用ページ・専用ドメインへ独立させる予定。画像・説明文はこのフォルダ(assets/works/yakuyomi-chan/)とJSONにまとめておく。",
     "thumbnail": null,
     "background": [],
-    "useCases": [],
-    "features": [],
+    "useCases": [
+      "海外の視聴者からのコメントが多い、TwitchやYouTubeの配信者",
+      "コメントを日本語の音声で聞きながら配信したい人"
+    ],
+    "features": [
+      "チャット監視: Twitch / YouTube / 両方同時に対応",
+      "ローカルLLM(Gemma4)による日本語への自動翻訳",
+      "VOICEVOXの声での読み上げ(キャラクターの絞り込み・試聴・お気に入り登録、話速・音高・抑揚・音量の調整)",
+      "OBSオーバーレイ: 翻訳のみ、または原文+翻訳を、配信画面に透過表示",
+      "ホットキーでのミュート切り替え",
+      "処理した全コメントを日付ごとに自動保存"
+    ],
     "screenshots": [],
     "videos": [],
-    "tech": [],
-    "howToUse": [],
-    "availability": "GitHub の Releases でインストーラーを配布しています。",
+    "tech": [
+      "Python(Tkinter)",
+      "LM Studio 経由の Gemma4(OpenAI互換API)",
+      "VOICEVOX(ローカルAPI)",
+      "twitchio / YouTube Data API v3",
+      "Flask(OBS用オーバーレイ)"
+    ],
+    "howToUse": [
+      "同梱の Install.exe を実行し、ウィザードに従って進めます。本体アプリ、VOICEVOX、LM Studio、翻訳用モデル(Gemma4 E2B)を、チェックボックスで選んでまとめて導入できます。",
+      "すでにVOICEVOXやLM Studioがある場合は、チェックを外して本体アプリだけを入れることもできます。",
+      "初回起動時に、Twitch / YouTube のトークン設定を行います。",
+      "OBSでは「ブラウザ」ソースにオーバーレイのURLを指定します。",
+      "Pythonから手動でセットアップする方法もあります。詳しい手順は、配布物の README をご覧ください。"
+    ],
+    "availability": "オープンソースとして無償で公開しています。GitHub の Releases でインストーラーを配布しています。",
     "links": [
       {
         "label": "ダウンロード(GitHub Releases)",
@@ -30,8 +53,18 @@
         "url": "https://github.com/kagekage4113-lab/yakuyomichan"
       }
     ],
-    "constraints": [],
+    "constraints": [
+      "全部を導入すると、約10GBのダウンロードが発生します。ディスクの空き容量は15GB以上を推奨します。",
+      "GPU(VRAM 4GB以上)があると快適です。なくても動きますが、翻訳が遅くなります。",
+      "手順はWindows向けに書かれています。",
+      "YouTubeのチャットは数秒間隔の取得のため、Twitchより反応がやや遅くなります。",
+      "LM Studio に接続できないときは、原文がそのまま読み上げられます。",
+      "VOICEVOXは各キャラクターの利用規約に従ってください。ボイスサンプルの一部には、つくよみちゃんの音声素材を使っています。",
+      "Twitch・YouTubeのトークンを含む設定ファイルは、公開・共有しないでください。"
+    ],
     "roadmap": [
+      "Edge-TTSを使った、日本語から外国語への同時通訳(双方向対応を目指す)",
+      "オーバーレイの配色・フォントのカスタマイズ",
       "独立した専用ページへの発展を検討しています。"
     ],
     "changelog": []
@@ -204,65 +237,6 @@
       "投資助言ではありません。シミュレーション結果は将来の成果を保証せず、利用による損失について責任を負いません。"
     ],
     "roadmap": [],
-    "changelog": []
-  },
-  {
-    "slug": "stream-comment-tool",
-    "name": "多言語チャット翻訳読み上げボット",
-    "tagline": "配信のチャットを自然な日本語に翻訳し、VOICEVOXの声で読み上げるツール。",
-    "category": "streaming",
-    "status": "released",
-    "featured": false,
-    "unverified": false,
-    "summary": [
-      "配信のチャットコメントを、何語で書かれていても自然な日本語に翻訳し、VOICEVOXの声で読み上げるツールです。翻訳はローカルLLMだけで行い、クラウドAPIは使いません。",
-      "会話AIのような複雑な人格機能は載せず、「翻訳して読み上げるだけ」に絞って、軽量さと安定性を優先しています。"
-    ],
-    "thumbnail": null,
-    "background": [],
-    "useCases": [
-      "海外の視聴者からのコメントが多い、TwitchやYouTubeの配信者",
-      "コメントを日本語の音声で聞きながら配信したい人"
-    ],
-    "features": [
-      "チャット監視: Twitch / YouTube / 両方同時に対応",
-      "ローカルLLM(Gemma4)による日本語への自動翻訳",
-      "VOICEVOXの声での読み上げ(キャラクターの絞り込み・試聴・お気に入り登録、話速・音高・抑揚・音量の調整)",
-      "OBSオーバーレイ: 翻訳のみ、または原文+翻訳を、配信画面に透過表示",
-      "ホットキーでのミュート切り替え",
-      "処理した全コメントを日付ごとに自動保存"
-    ],
-    "screenshots": [],
-    "videos": [],
-    "tech": [
-      "Python(Tkinter)",
-      "LM Studio 経由の Gemma4(OpenAI互換API)",
-      "VOICEVOX(ローカルAPI)",
-      "twitchio / YouTube Data API v3",
-      "Flask(OBS用オーバーレイ)"
-    ],
-    "howToUse": [
-      "LM Studio と VOICEVOX を別途用意します。",
-      "Python ライブラリをインストールし、LM Studio でモデル(google/gemma-4-e2b を推奨)を読み込んでローカルサーバーを起動します。",
-      "アプリの「トークン設定」で Twitch / YouTube の認証情報を入力し、起動します。",
-      "OBSでは「ブラウザ」ソースにオーバーレイのURLを指定します。",
-      "詳しい手順は、配布物の README をご覧ください。"
-    ],
-    "availability": "オープンソースとして無償で公開しています(配布先は準備中)。",
-    "links": [],
-    "constraints": [
-      "LM Studio と VOICEVOX が別途必要です。GPU(VRAM 4GB以上)があると快適です。なくても動きますが、翻訳が遅くなります。",
-      "手順はWindows向けに書かれています。",
-      "YouTubeのチャットは数秒間隔の取得のため、Twitchより反応がやや遅くなります。",
-      "LM Studio に接続できないときは、原文がそのまま読み上げられます。",
-      "VOICEVOXは各キャラクターの利用規約に従ってください。ボイスサンプルの一部には、つくよみちゃんの音声素材を使っています。",
-      "Twitch・YouTubeのトークンを含む設定ファイルは、公開・共有しないでください。"
-    ],
-    "roadmap": [
-      "VOICEVOX / LM Studio を含む、インストーラーでの一括セットアップ",
-      "Edge-TTSを使った、日本語から外国語への同時通訳(双方向対応を目指す)",
-      "オーバーレイの配色・フォントのカスタマイズ"
-    ],
     "changelog": []
   },
   {
