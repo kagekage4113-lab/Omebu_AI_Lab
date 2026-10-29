@@ -4,7 +4,7 @@
     "name": "やく読みちゃん",
     "tagline": "PC上で使う読み上げ関連ツール。",
     "category": "other",
-    "status": "checking",
+    "status": "released",
     "featured": true,
     "unverified": true,
     "summary": [
@@ -19,8 +19,12 @@
     "videos": [],
     "tech": [],
     "howToUse": [],
-    "availability": "",
+    "availability": "GitHub の Releases でインストーラーを配布しています。",
     "links": [
+      {
+        "label": "ダウンロード(GitHub Releases)",
+        "url": "https://github.com/kagekage4113-lab/yakuyomichan/releases"
+      },
       {
         "label": "GitHub",
         "url": "https://github.com/kagekage4113-lab/yakuyomichan"
