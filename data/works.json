@@ -170,7 +170,12 @@
       "Pythonによるゲーム操作と、プレイ状況に応じたローカルLLMの判断を組み合わせた、自動攻略プロジェクトです。",
       "実行ログを別のLLMで評価する仕組みも開発しています。開発者の確認では、リージェントでA7をクリアしています。"
     ],
-    "thumbnail": null,
+    "thumbnail": {
+      "src": "assets/works/sts2-auto-ai/thumb.webp",
+      "alt": "Slay the Spire 2 AI攻略 リージェント挑戦のタイトル画像。AI VTuber「オペねこ」のイラスト",
+      "width": 1672,
+      "height": 941
+    },
     "background": [],
     "useCases": [],
     "features": [],
