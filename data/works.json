@@ -88,9 +88,9 @@
     ],
     "thumbnail": {
       "src": "assets/works/tax-simulator/thumb.webp",
-      "alt": "電卓と硬貨、「手取り」と書かれた明細のイメージイラスト",
-      "width": 1536,
-      "height": 1024
+      "alt": "「税金メーター 収入が変わると、手取りはいくら？」のタイトル画像。円マークのメーターのイラスト",
+      "width": 1734,
+      "height": 907
     },
     "background": [
       "複雑な税制を、手元で試算できる形にするために開発しました。"
